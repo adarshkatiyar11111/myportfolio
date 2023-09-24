@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE-edge">
+    <meta name="viewport" content="with-device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+</head>  
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/adarsh.png" class="adarsh">
+                
+                
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+            <div class="header_text">
+                <p>Web Designer</p>
+                <h1>Hi, I'm <span>Adarsh</span><br> Kumar Kr </h1>
+            </div>
+        </div>
+
+        
+    </div>
+    <!---------about--------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"></div>
+                <img src="images/adii.png">
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am Adarsh Kumar katiyar.I am pursuing BCA from PSIT kanpur.I am dedicated and well organized person.I have a creative mind and am always up for new challenges. I have good technical and communication skills.
+                        Some Technical skills are given below:
+                        
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('activity')">activity</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web developer</span><br>Designing web/app interfaces</li>
+                            <li><span>Languages</span><br>C & C++<br>python</li>
+                        
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="activity">
+                        <ul>
+                            <li><span>Basketball</span><br></li>
+                            <li><span>Street soccer</span><br></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>High school</span><br>Jai Narayan Vidya Mandir Inter Collage</li>
+                            <li><span>Intermediate</span><br>Ptl Saraswati Inter Collage</li>
+                            
+                        </ul>
+                    </div>
+
+                
+                         
+                         
+                    
+                         
+  
+
+                         
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    <!-------contct------------>
+    <div id="contact">
+        <div class="container">
+            <div class="container">
+                <div class="contact-left">
+                    <h1 class="sub-title">contact Me</h1>
+                    <p>adarshkatiyar11111@gmail.com</p>
+                    <p>9140168306</p>
+                    <div class="social-icons"><i class="fab fa-linkedin"></i></div>
+                    <a href="linkedin.com/in/adarsh-kumar-katiyar-3b0732258"></a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active_link");
+            document.getElementById(tabname).classList.add("active-tab");
+            
+
+        }
+    </script>
+
+
+</body>
+</html>
